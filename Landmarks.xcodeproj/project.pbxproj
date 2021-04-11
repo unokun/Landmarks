@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D36AA7852622B2F1001C2ECF /* CategoryHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36AA7842622B2F1001C2ECF /* CategoryHome.swift */; };
 		D379E2C9261ED9E40088214D /* LandmarksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D379E2C8261ED9E40088214D /* LandmarksApp.swift */; };
 		D379E2CB261ED9E40088214D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D379E2CA261ED9E40088214D /* ContentView.swift */; };
 		D379E2CD261ED9E70088214D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D379E2CC261ED9E70088214D /* Assets.xcassets */; };
@@ -53,6 +54,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D36AA7842622B2F1001C2ECF /* CategoryHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryHome.swift; sourceTree = "<group>"; };
 		D379E2C5261ED9E40088214D /* Landmarks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Landmarks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D379E2C8261ED9E40088214D /* LandmarksApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarksApp.swift; sourceTree = "<group>"; };
 		D379E2CA261ED9E40088214D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -112,6 +114,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D36AA7832622B2D7001C2ECF /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				D36AA7842622B2F1001C2ECF /* CategoryHome.swift */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
 		D379E2BC261ED9E40088214D = {
 			isa = PBXGroup;
 			children = (
@@ -194,6 +204,7 @@
 		D379E31C261FE9F80088214D /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				D36AA7832622B2D7001C2ECF /* Category */,
 				D37A743626227E7E0022FBE1 /* Landmarks */,
 				D37A742F26227CE40022FBE1 /* Helpers */,
 				D3F640502622A6D20073F684 /* Badges */,
@@ -378,6 +389,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D379E2CB261ED9E40088214D /* ContentView.swift in Sources */,
+				D36AA7852622B2F1001C2ECF /* CategoryHome.swift in Sources */,
 				D3F640612622AB830073F684 /* HikeGraph.swift in Sources */,
 				D3F6404C26229A7D0073F684 /* Badge.swift in Sources */,
 				D379E307261FD9DE0088214D /* MapView.swift in Sources */,
