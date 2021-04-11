@@ -9,13 +9,14 @@ import SwiftUI
 
 struct CategoryHome: View {
     @EnvironmentObject var modelData: ModelData
+    @State private var showingProfile = false
     
     var body: some View {
         NavigationView {
             List {
                 modelData.features[0].image
                     .resizable()
-                    .scaledToFit()
+                    .scaledToFill()
                     .frame(height: 200)
                     .clipped()
                     .listRowInsets(EdgeInsets())
@@ -25,7 +26,18 @@ struct CategoryHome: View {
                 }
                 .listRowInsets(EdgeInsets())
             }
+            .listStyle(InsetListStyle())
             .navigationTitle("Featured")
+            .toolbar {
+                Button(action: { showingProfile.toggle() }) {
+                    Image(systemName: "person.crop.circle")
+                        .accessibilityLabel("User Profile")
+                }
+            }
+            .sheet(isPresented: $showingProfile) {
+                ProfileHost()
+                    .environmentObject(modelData)
+            }
         }
     }
 }
